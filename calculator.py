@@ -161,6 +161,7 @@ def bnteq_fnc(e):
     global inVar
     global resVar
     x = inVar.get()
+    x = x.lstrip('0')
     x = eval(x)
 
     resVar.set(x)
