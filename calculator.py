@@ -52,9 +52,9 @@ def del_one(e):
 def psn_fnc(e):
     global inVar
     x = inVar.get()
-    x = x+'%'
+    x = eval(x+'/100')
 
-    inVar.set(x)
+    inVar.set(str(x))
 
 def div_fnc(e):
     global inVar
